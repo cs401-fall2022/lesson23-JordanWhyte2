@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1(style="text-align:left")= "Jordan Whyte's Blog"
+  // span(style="float:right")
+  //   a(href="/createLayout")="Create Post"
+  div(id="outer-container")
+    ul 
+      each item in data 
+        div(id="inner-container")
+          span  #{item.blog_txt}
+          br
+          br
+          div(id="align-right") Post Number #{item.blog_id}
+        br
+        br 
+    br
+
+
+  form(action="/add", method="POST")
+    input(name="blog", id="blog", value="Create Blogpost!")
+    button(id="create", type="submit")
+      p add item 
+  
+  form(action="/delete", method="POST")
+    input(name="blog", id="blog", value="Enter the post number")
+    button(id="delete", type="submit")
+      p delete item 
