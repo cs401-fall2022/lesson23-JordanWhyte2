@@ -8,6 +8,7 @@ block content
     ul 
       each item in data 
         div(id="inner-container")
+          h3 #{item.blog_title}
           span  #{item.blog_txt}
           br
           br
@@ -16,13 +17,26 @@ block content
         br 
     br
 
-
+  p Create a blog post below!
   form(action="/add", method="POST")
-    input(name="blog", id="blog", value="Create Blogpost!")
+    input(name="blogtitle", id="blogtitle", value="Blog Title" required)
+    br
+    input(name="blogtxt", id="blogtxt", value="Blog Text", size="200" required)
     button(id="create", type="submit")
       p add item 
-  
+  br
+  br
+  p Delete a blog post below!
   form(action="/delete", method="POST")
-    input(name="blog", id="blog", value="Enter the post number")
+    input(name="blog", id="blog", type="number", value="Enter the post number")
     button(id="delete", type="submit")
       p delete item 
+  br
+  br
+  p Update a blog post below!
+  form(action="/update", method="POST")
+    input(name="blogid", id="blogid", type="number", value="Enter the post number" required)
+    br
+    input(name="blogtxt", id="blogtxt", value="Enter what the blog post should say", size="200" required)
+    button(id="update", type="submit")
+      p update item
