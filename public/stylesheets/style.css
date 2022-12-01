@@ -2,7 +2,7 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: white;
-  background-color: black;
+  background-color: rgb(28, 28, 28);
 }
 
 a {
@@ -11,6 +11,8 @@ a {
 
 h1 {
   color:darkturquoise;
+  font-family:brush-script;
+  font-size: 50px;
 }
 
 #outer-container{
@@ -34,6 +36,15 @@ h1 {
   color:black;
 }
 
+#inputs{
+  font-size: 20px;
+  text-align: center;
+}
+
+#separate{
+  padding-top: 500px;
+}
+
 #align-right{
   text-align: right;
   font-size: small;
@@ -44,3 +55,8 @@ ul{
   color:black;
   font-size: large;
 }
+
+#images{
+  text-align:center;
+}
+

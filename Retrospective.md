@@ -21,12 +21,12 @@ Be safe CITE!
 
 ## Experience
 
-TODO
+I struggled with getting the update command to work and getting the titles for my blog post. I kept running in circles researching online to see what I was doing wrong, when it turned out I just had to restart the localhost and my code was correct. There was nothing about this lab that was poorly explained. I was able to complete the entire project. I tried to get the making new posts to be on another page but after messing with making this work on pug for a while and not being successful, I scrapped the idea.
 
 ## Known issues or Bugs
 
-TODO
+None.
 
 ## Sources used
 
-TODO
+Geeksforgeeks.org This was a great resource for learning about pug and database integration. I use this website for my other classes a lot as there is a great knowledgebase for all topics and it helped me when I was confirming that I did the update command correctly. 

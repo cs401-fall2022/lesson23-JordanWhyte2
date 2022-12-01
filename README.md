@@ -1,4 +1,4 @@
-Final website
+Jordan Whyte Final Website CS401
 
 Run the following commands to get the necessary repositories
 ```
